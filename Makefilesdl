@@ -1,0 +1,10 @@
+
+OBJS = *cpp
+
+OBJ_NAME = fileexe
+
+all : $(OBJS)
+	g++ $(OBJS) -IC:\Users\illya\Desktop\vulkanEngine\imgui -IC:\sdl_main\include -LC:\sdl_main\lib -w -Wl,-subsystem,windows -lopengl32 -lmingw32 -lSDL2main -lSDL2 -o $(OBJ_NAME)
+
+#all: $(OBJS)
+#	go build $(OBJS) -tags static -ldflags "-s -w"
